@@ -1,0 +1,14 @@
+{
+  "name": "drupal/slack",
+  "type": "drupal-module",
+  "description": "Slack",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "http://drupal.org/project/slack",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/slack",
+    "source": "http://cgit.drupalcode.org/slack"
+  },
+  "require": { }
+}

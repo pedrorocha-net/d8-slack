@@ -40,11 +40,13 @@ function slack_rules_action_info() {
  * Rules action for sending a message to the Slack.
  */
 function slack_rules_send_message_action($message, $channel, $username) {
+  $config = \Drupal::config('slack.settings');
+
   if (!$channel) {
-    $channel = slack_get_default_channel();
+    $channel = $config->get('slack_channel');
   }
   if (!$username) {
-    $username = slack_get_default_username();
+    $username = $config->get('slack_username');
   }
   slack_send_message($message, $channel, $username);
 }

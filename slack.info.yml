@@ -1,0 +1,4 @@
+name: 'Slack'
+type: module
+description: 'Integration with Slack.com service.'
+core: 8.x
